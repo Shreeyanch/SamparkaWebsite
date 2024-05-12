@@ -1,0 +1,69 @@
+.cardimageIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.reviewStand,
+.viewMore {
+  position: relative;
+  letter-spacing: 0.3px;
+}
+.reviewStand {
+  line-height: 15px;
+  font-weight: 600;
+}
+.viewMore {
+  cursor: default;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 10px;
+  font-size: var(--font-size-3xs);
+  text-decoration: underline;
+  line-height: 10px;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.text,
+.titles {
+  display: flex;
+  align-items: flex-start;
+}
+.titles {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.text {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.productcard3 {
+  width: 316px;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 768px) {
+  .viewMore {
+    display: flex;
+  }
+  .productcard3 {
+    height: auto;
+  }
+}
